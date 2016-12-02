@@ -1,9 +1,11 @@
-import random
+import random 
 
 def randomshuff(list):
-    random.shuffle(list)# it randomly shuffle the list
-    print list
+	list = []
+	for i in range(9):
+		x = random.randint(0,20)# this randomly generates shuffled list
+		list.append(x)
+	return list
+	
 
-list = [5,3,8,6,1,9,2,7]
-randomshuff(list)
-    
+print randomshuff(list)    
